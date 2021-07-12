@@ -1,0 +1,67 @@
+table {
+    width: 100%;
+    border: 1px solid #000;
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+ }
+ caption {
+    padding: 0.3em;
+    color: #fff;
+     background: #000;
+ }
+ th {
+    background: #eee;
+ }
+
+ thead th:nth-child(2) {
+    width: 50%;
+    
+  }
+  tbody td:nth-child(2){
+    text-align: left;
+  }
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  tbody tr:hover{
+      background-color: honeydew;
+  }
+  th, td {
+    width: 25%;
+    text-align: center;
+  }
+  tfoot{
+      width: 100%;
+  }
+  .btnfootetableBotigues{
+    align-items: center;
+    height: 40px;
+    background-color:slategrey;
+    border-radius: 5%;
+    width: 30%;
+    text-align: center;
+    color: whitesmoke;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
+  #newbotiga:hover{
+    background-color: green;
+    color: black;
+  }
+  
+  #modifcabotiga:hover{
+    background-color: coral;
+    color: black;
+  }
+  
+  #eliminabotiga:hover{
+    background-color: red;
+    color: black;
+  }

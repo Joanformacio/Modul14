@@ -1,0 +1,20 @@
+.full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 80%;
+    background-color: rgba(84, 139, 175,0.1);
+  }
+
+#linkTaulsBotigues{
+    margin-top: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 100px;
+    font-family:  Roboto;
+    font-weight: 700;
+    color: black;
+    text-shadow: 4px 4px 2px blanchedalmond;
+}

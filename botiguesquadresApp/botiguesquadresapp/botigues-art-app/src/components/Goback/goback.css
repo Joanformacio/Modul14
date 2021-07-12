@@ -1,0 +1,20 @@
+.goback{
+    position: fixed;
+    bottom:  221px;
+    right: 30px;
+    height: 70px;
+    width: 70px;
+    border-radius:  100%;
+    opacity:0.3;
+    border: black 7px none;
+    background-color: black;
+    text-align: center;
+}
+
+.goback span{
+    color: white;
+    opacity:0.7;
+    font-size: 30px;
+    line-height: 70px;
+    text-align: center;
+}

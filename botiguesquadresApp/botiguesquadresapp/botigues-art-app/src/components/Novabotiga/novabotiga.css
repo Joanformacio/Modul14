@@ -1,0 +1,74 @@
+*{box-sizing:border-box;}
+
+#wrappebotigues{
+    margin-top: 60px;
+    width: 60% auto;
+    height: auto;
+}
+form{
+	width:50%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+    font-family: 'Roboto';
+}
+
+form h3{
+    text-align: center;
+    font-size: 30px;
+    color:rgb(207, 77, 29);
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+    font-family: 'Roboto';
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+form input[type="text"]{
+	width:80%;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input:hover{
+    box-shadow: 0 0 15px 10px;
+}
+
+form select:hover{
+	box-shadow: 0 0 15px 10px;
+}
+
+form select{
+	width:78%;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:9px 16px 0;
+	display:inline-block;
+}
+
+form button[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form button:hover{
+	cursor:pointer;
+}

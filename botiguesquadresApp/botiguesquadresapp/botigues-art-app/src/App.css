@@ -1,0 +1,147 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing:border-box;
+  vertical-align: baseline; 
+  font-family: 'Roboto,Times New Roman', Times, serif;
+}
+
+/*cabecera*/
+#cabecera{
+  margin-top:30px;
+  border-bottom:4px solid #f56a6a;
+  display:flow-root; 
+  margin-bottom: 10px;
+}
+
+.logo{
+  margin-left:1em;
+  float: left;
+  width:60%;
+}
+
+.logo h1{
+  color: #3d4449;
+  font-size: 2.5em;
+  margin: 0; 
+}
+
+.logo a{
+  color:inherit;
+  position:relative;
+  display:inline-block;
+  padding-left:80px;
+  padding-top:1em;
+  line-height:1em;
+}
+.logo a:before{
+  content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:80px;
+    height:80px;
+    background-image:url(./imagenes/mrBean.jpg);
+    background-size:100%;
+}
+
+.logo>h1>a>span{
+  font-size: 55px;
+}
+.color{
+  color: #6065ac;
+}
+
+#icons {
+  float: right;
+  height: 36px;
+  width:132px;
+  padding: 0;
+  margin: 0 1em 0em 2em; }
+
+#icons li {
+  display: inline-block; 
+  margin:0 -0.2em;}
+
+#icons a {
+  width: 36px;
+  height: 36px;
+  margin-left: 0px;
+  background-repeat: no-repeat;
+  background-size: 145px;
+  background-image: url(./imagenes/sprite_icons.png);
+  border-radius: 50%;
+  line-height: 10px;
+  text-align: center;
+  display: inline-block; }
+  
+#icons #facebook {
+  background-position: 0px 0px; }
+
+#icons #facebook:hover {
+  background-position: 0px -38px;
+}
+
+#icons #twitter {
+  background-position: -38px 0px; }
+
+#icons #twitter:hover {
+  background-position: -38px -38px;
+}
+
+#icons #pinterest {
+  background-position: -78px 0px; }
+
+#icons #pinterest:hover {
+  background-position: -78px -38px;
+}
+
+#icons #instagram {
+  background-position: -114px 0px; }
+
+#icons #instagram:hover {
+  background-position: -114px -38px;
+}
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+main{
+  width: 80%;
+  margin:  auto;
+
+}
+
+
+#footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background-color: teal;
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
