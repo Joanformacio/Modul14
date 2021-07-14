@@ -35,7 +35,7 @@ const Formupdatebotiga = () => {
         let posicion;
         let index = e.target.selectedIndex
         let auxBotiga = {}
-        if (index != 0 && botigues.length > 0) {
+        if (index > 0 && botigues.length > 0) {
             posicion = index - 1;
             document.getElementById('input_nom').value = botigues[posicion].nom
             document.getElementById('input_capacitat').value = botigues[posicion].capacitat
