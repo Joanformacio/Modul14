@@ -32,23 +32,22 @@ const Formupdatebotiga = () => {
     }, [])
 
     const handleSelected = (e) => {
-
+        let posicion;
         let index = e.target.selectedIndex
-        setBotiga({
-            idBotiga: 0,
-            nom: "",
-            capacitat: 0
-        })
+        let auxBotiga = {}
+        if (index != 0 && botigues.length > 0) {
+            posicion = index - 1;
+            document.getElementById('input_nom').value = botigues[posicion].nom
+            document.getElementById('input_capacitat').value = botigues[posicion].capacitat
+            auxBotiga = ({
+                idBotiga: botigues[posicion].idBotiga,
+                nom: botigues[posicion].nom,
+                capacitat: botigues[posicion].capacitat,
+            })
+            setBotiga(auxBotiga)
+            setDeshabilitat(false)
+        }
 
-        document.getElementById('input_nom').value = botigues[index].nom
-        document.getElementById('input_capacitat').value = botigues[index].capacitat
-        let auxBotiga = ({
-            idBotiga: botigues[index].idBotiga,
-            nom: botigues[index].nom,
-            capacitat: botigues[index].capacitat,
-        })
-        setBotiga(auxBotiga)
-        setDeshabilitat(false)
     }
 
 
@@ -59,7 +58,7 @@ const Formupdatebotiga = () => {
         setBotiga({
             ...botiga,
             [event.target.name]: event.target.value,
-            [event.target.capacitat]: event.target.value
+
         })
     }
 
@@ -79,6 +78,7 @@ const Formupdatebotiga = () => {
                 <div className="botigaInputform">
                     <label >Selecciona</label>
                     <select placeholder="Selecciona una botiga" className="form-control" name="botigues" onChange={handleSelected}>
+                        <option>Selecciona elemento a Modificar</option>
                         {
                             botigues ?
                                 (botigues.map(botiga => createSelectItems(botiga))) : <span>No hay datos</span>

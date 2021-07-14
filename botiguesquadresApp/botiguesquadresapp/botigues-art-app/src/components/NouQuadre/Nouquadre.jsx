@@ -24,14 +24,12 @@ const Novaquadre = ({ idbotiga }) => {
         setQuadre({
             ...quadre,
             [event.target.name]: event.target.value,
-            [event.target.autor]: event.target.value,
-            [event.target.data_entrada]: event.target.value,
+
         })
     }
 
     const enviarDatos = (event) => {
         event.preventDefault()
-
         botigaservice.saveQuadre(quadre)
     }
 

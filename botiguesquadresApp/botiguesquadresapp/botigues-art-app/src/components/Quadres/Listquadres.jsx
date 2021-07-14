@@ -26,13 +26,14 @@ const renderQuadre = (quadre) => {
 const Listquadres = ({ idbotiga }) => {
     const [quadres, setQuadres] = useState()
     const history = useHistory()
+    const [deshabilitat, setDeshabilitat] = useState(true)
 
     useEffect(() => {
         botigaservice.getQuadres(idbotiga).then(data => setQuadres(data))
-
+        if (quadres != undefined) { setDeshabilitat(false) }
     }, [])
 
-
+    botigaservice.getQuadres(idbotiga).then(data => setQuadres(data))
 
     return (
 
@@ -64,7 +65,7 @@ const Listquadres = ({ idbotiga }) => {
                             }
                         />
                         <input href="#" id="modifcabotiga" className="btnfootetableBotigues" value="Modificar"
-                            onClick={
+                            disabled={deshabilitat} onClick={
                                 () => { history.push(`/botiga/${idbotiga}/modificarquadre/`); }
                             } />
                     </tr>
